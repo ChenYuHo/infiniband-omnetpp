@@ -1,0 +1,110 @@
+                                                                
+version 3
+run General-0-20221122-00:07:03-56862
+attr configname General
+attr datetime 20221122-00:07:03
+attr datetimef 20221122-000703
+attr experiment General
+attr inifile switch8.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network switch8
+attr processid 56862
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config debug-on-errors true
+config cmdenv-status-frequency 60s
+config network switch8
+config **.H[0]**.rank 1
+config **.H[1]**.rank 2
+config **.H[2]**.rank 3
+config **.H[3]**.rank 4
+config **.H[4]**.rank 5
+config **.H[5]**.rank 6
+config **.H[6]**.rank 7
+config **.H[7]**.rank 8
+config **.H[0]**.srcLid 1
+config **.H[1]**.srcLid 2
+config **.H[2]**.srcLid 3
+config **.H[3]**.srcLid 4
+config **.H[4]**.srcLid 5
+config **.H[5]**.srcLid 6
+config **.H[6]**.srcLid 7
+config **.H[7]**.srcLid 8
+config **.nodeAllocFile "\"switch8.app0.nodealloc\""
+config **.scalar-recording true
+config **.vector-recording true
+config **.flitSize 2048B
+config **.width 4
+config **.speed 100Gbps
+config **.maxVL 1
+config **.sink.hiccupDuration 0.001us
+config **.sink.hiccupDelay 10000us
+config **.sink.repFirstPackets 0
+config **.obuf.credMinTime 4.096us
+config **H**.obuf.size 5
+config **.ibuf.lossyMode false
+config **.ISWDelay 50ns
+config **.VSWDelay 50ns
+config **sw**.vlarb.coreFreq 1200MHz
+config **H**.vlarb.coreFreq 1000MHz
+config **sw**.vlarb.busWidth 24B
+config **H**.vlarb.busWidth 16B
+config **.vlarb.vlHighLimit 16
+config **.vlarb.highVLArbEntries "\"0:1 1:20 2:40 3:80\""
+config **.vlarb.lowVLArbEntries "\"0:1 1:20 2:40 3:80\""
+config **.vlarb.useFCFSRQArb false
+config **.pktfwd.AdaptMode "\"none\""
+config **.pktfwd.LIDBindTime 2us
+config **.pktfwd.TQBusy1Thd 20
+config **.pktfwd.TQBusy2Thd 40
+config **.pktfwd.TQBusy3Thd 80
+config **.pktfwd.ARAdaptThd 4
+config **.pktfwd.OPSelAlgo "\"greedy\""
+config **.pktfwd.GreedyRandSize 3
+config **.pktfwd.statRepTime 10us
+config **.pktfwd.OPSelOffsetByDLID 0
+config **.msgSQ 0
+config **.maxContPkts 10
+config **.popDlyPerByte 0.25ns
+config **.genDlyPerByte 0.25ns
+config **.maxQueuedPerVL 10
+config **.flit2FlitGap 0.001ns
+config **.pkt2PktGap 0.001ns
+config **.servers[0].**.on_throughput_obuf 1
+config **.servers[1].**.on_throughput_obuf 1
+config **.servers[2].**.on_throughput_obuf 1
+config **.servers[3].**.on_throughput_obuf 1
+config **.servers[4].**.on_throughput_obuf 1
+config **.timeStep_us 25us
+config **.on_cc 0
+config **.on_newcc 1
+config **.CCT_Timer 25us
+config **.vlarb**.markrate 1
+config **ibuf**.maxBeingSent 1
+config **ibuf**.totalBufferSize 1000
+config **.**H[*]**.ibuf**.maxStatic* 32
+config **.**H[*].obuf**.size 2
+config **.sink**.on_cc 1
+config **.startStatCol 0s
+config **.pktFwdType "\"Pktfwd\""
+config **.fdbIndex 0
+config **.fdbsVecFile "\"switch8.fdbs\""
+config **.**sw**.subport[*].ibuf.maxStatic* 32
+config **.**sw**.obuf.size 5
+config **.**sw**.vlarb.coreFreq 1200MHz
+config **.**sw**.vlarb.busWidth 24B
+
+vector 0 switch8.H[1].sink "latency of Large message" ETV
+vector 1 switch8.H[2].sink "latency of Large message" ETV
+vector 2 switch8.H[3].sink "latency of Large message" ETV
+vector 3 switch8.H[4].sink "latency of Large message" ETV
+vector 4 switch8.H[5].sink "latency of Large message" ETV
+vector 5 switch8.H[6].sink "latency of Large message" ETV
+vector 6 switch8.H[7].sink "latency of Large message" ETV
+vector 7 switch8.H[0].sink "latency of Large message" ETV
